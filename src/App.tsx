@@ -3,7 +3,7 @@ import { Box, Button, Flex, Spacer } from "@chakra-ui/react";
 
 import Home from "./pages/home/home";
 import { Route, Routes } from "react-router-dom";
-import { Switch } from "@chakra-ui/react";
+
 import Dashboard from "./pages/dashboard/dashboard";
 import SendMoney from "./pages/dashboard/sendMoney";
 import Transaction from "./pages/dashboard/transaction";
@@ -11,6 +11,8 @@ import Settings from "./pages/dashboard/settings";
 import Log from "./pages/dashboard/logging";
 import Registration from "./pages/dashboard/register";
 import Fav from "./pages/dashboard/favourities";
+import Pinn from "./pages/dashboard/pin";
+import Logg from "./pages/dashboard/logout";
 
 const app = () => {
   return (
@@ -27,6 +29,8 @@ const app = () => {
           <Route path="/login/favourities" element={<Fav />} />
           <Route path="/login/transaction" element={<Transaction />} />
           <Route path="/login/settings" element={<Settings />} />
+          <Route path="/login/setPin" element={<Pinn />} />
+          <Route path="/login/logout" element={<Logg />} />
         </Route>
       </Routes>
     </Flex>

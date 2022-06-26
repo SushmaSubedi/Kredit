@@ -15,17 +15,14 @@ import {
 } from "@chakra-ui/react";
 import DefaultButton from "./../../components/defaultButton";
 import PageLayout from "./../../container/pageLayout/pageLayout";
-import { Link } from "react-router-dom";
 const Fav = () => {
   return (
     <div>
-      <Link to="/">
-        <Heading color="white">
-          <Heading as="span" display="inline" color="#A1FE6B">
-            Kredit
-          </Heading>
+      <Heading color="white">
+        <Heading as="span" display="inline" color="#A1FE6B">
+          Kredit
         </Heading>
-      </Link>
+      </Heading>
       <PageLayout>
         <Flex w="100%" h="100vh">
           <form>
@@ -75,6 +72,9 @@ const Fav = () => {
                       <Box textAlign="right" pt="1rem">
                         <DefaultButton type="">remove</DefaultButton>
                       </Box>
+                      <Box textAlign="right" pt="1rem">
+                        <DefaultButton type="">update</DefaultButton>
+                      </Box>
                     </Td>
                   </Tr>
                   <Tr>
@@ -85,6 +85,9 @@ const Fav = () => {
                       {" "}
                       <Box textAlign="right" pt="1rem">
                         <DefaultButton type="">remove</DefaultButton>
+                      </Box>
+                      <Box textAlign="right" pt="1rem">
+                        <DefaultButton type="">update</DefaultButton>
                       </Box>
                     </Td>
                   </Tr>

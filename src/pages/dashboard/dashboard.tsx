@@ -24,24 +24,11 @@ const Dashboard = () => {
         px="1rem"
         w="100%"
       >
-        <Link to="/">
-          <Heading color="white">
-            <Heading as="span" display="inline" color="#A1FE6B">
-              Kredit
-            </Heading>
+        <Heading color="white">
+          <Heading as="span" display="inline" color="#A1FE6B">
+            Kredit
           </Heading>
-        </Link>
-        <Spacer />
-        <Spacer />
-        <Link to="/">
-          <Heading color="white">
-            <Box textAlign="right" pt="1rem">
-              <Button px="1rem" bg="#A1FE6B" color="black">
-                logout
-              </Button>
-            </Box>
-          </Heading>
-        </Link>
+        </Heading>
       </Flex>
       <PageLayout>
         <Flex w="100%" h="100vh">

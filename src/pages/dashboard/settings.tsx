@@ -6,13 +6,12 @@ import { Heading, Flex } from "@chakra-ui/react";
 const Settings = () => {
   return (
     <div>
-      <Link to="/">
-        <Heading color="white">
-          <Heading as="span" display="inline" color="#A1FE6B">
-            Kredit
-          </Heading>
+      <Heading color="white">
+        <Heading as="span" display="inline" color="#A1FE6B">
+          Kredit
         </Heading>
-      </Link>
+      </Heading>
+
       <PageLayout>
         <Flex w="100%" h="100vh">
           {" "}

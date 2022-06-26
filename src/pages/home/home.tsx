@@ -26,7 +26,6 @@ import homeTwo from "../../assets/images/2.png";
 // @ts-ignore
 import homeThree from "../../assets/images/3.png";
 
-import DefaultButton from "../../components/defaultButton";
 import Testemonials from "./../../components/testemonials";
 import Footer from "./../../components/footer";
 import Navbar from "../../components/navbar";
