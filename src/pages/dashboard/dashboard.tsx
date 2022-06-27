@@ -34,7 +34,7 @@ const Dashboard = () => {
         <Flex w="100%" h="100vh">
           <Flex w="100%" boxSizing="border-box">
             <Flex w="inherit" m="2rem" direction="column">
-              <YourAccount balance={56262} accountNo={"25654965667469"} />
+              <YourAccount balance={56262} name={""} />
             </Flex>
           </Flex>
         </Flex>
@@ -44,9 +44,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-const single = (
-  <Center w="100px" h="100px" bg="red.500">
-    Hello
-  </Center>
-);

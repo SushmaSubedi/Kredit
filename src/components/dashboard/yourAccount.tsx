@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Text, Spacer } from "@chakra-ui/react";
 interface propsType {
   balance: number;
-  accountNo: string;
+  name: string;
 }
 const YourAccount = (props: propsType) => {
   return (
@@ -24,12 +24,9 @@ const YourAccount = (props: propsType) => {
         Account
       </Text>
       <Text fontSize="md" fontWeight="light">
-        {props.accountNo}
+        {props.name}
       </Text>
-      <Flex my="0.5rem" w="50%" justifyContent="space-between">
-        <Text>Print</Text>
-        <Text>Download</Text>
-      </Flex>
+      <Flex my="0.5rem" w="50%" justifyContent="space-between"></Flex>
     </Flex>
   );
 };
