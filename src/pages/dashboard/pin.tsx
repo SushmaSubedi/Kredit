@@ -4,7 +4,7 @@ import PageLayout from "./../../container/pageLayout/pageLayout";
 import DefaultButton from "./../../components/defaultButton";
 import DefaultInput from "./../../components/defaultInput";
 import { VStack, HStack, Flex, Text, Heading, Box } from "@chakra-ui/react";
-import Popup from "./Popup";
+
 import AppContext from "../../context/AppContext";
 const Pinn = () => {
   const [pinValue, setPinValue] = useState("");
