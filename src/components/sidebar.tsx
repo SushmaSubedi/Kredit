@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Image, Flex } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, Heading } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 
 //Icons
@@ -14,10 +14,21 @@ import "./sidebar.css";
 const Sidebar = () => {
   return (
     <Box py="1rem" color="white" bg="#212222" minH="90vh" minW="240px">
-      <NavLink
-        to="/login/dashboard
-      "
+      <Flex
+        alignItems="center"
+        color="gray.50"
+        bg="#1B1B1B"
+        py="0.5rem"
+        px="1rem"
+        w="100%"
       >
+        <Heading color="white">
+          <Heading as="span" display="inline" color="#A1FE6B">
+            Kredit
+          </Heading>
+        </Heading>
+      </Flex>
+      <NavLink to="dashboard">
         <Flex
           _hover={{ bg: "#c4c4c460" }}
           p="1rem"
@@ -28,7 +39,7 @@ const Sidebar = () => {
           <Text ml="0.5rem">Dashboard</Text>
         </Flex>
       </NavLink>
-      <NavLink to="/login/send-money">
+      <NavLink to="send-money">
         <Flex
           _hover={{ bg: "#c4c4c460" }}
           p="1rem"
@@ -39,8 +50,8 @@ const Sidebar = () => {
           <Text ml="0.5rem">Send Money</Text>
         </Flex>
       </NavLink>
-      {/* . */}
-      <NavLink to="/login/transaction">
+
+      <NavLink to="transaction">
         <Flex
           _hover={{ bg: "#c4c4c460" }}
           p="1rem"
@@ -52,7 +63,7 @@ const Sidebar = () => {
         </Flex>
       </NavLink>
 
-      <NavLink to="/login/favourities">
+      <NavLink to="favourities">
         <Flex
           _hover={{ bg: "#c4c4c460" }}
           p="1rem"
@@ -64,7 +75,7 @@ const Sidebar = () => {
         </Flex>
       </NavLink>
 
-      <NavLink to="/login/settings">
+      <NavLink to="settings">
         <Flex
           _hover={{ bg: "#c4c4c460" }}
           p="1rem"
@@ -75,18 +86,7 @@ const Sidebar = () => {
           <Text ml="0.5rem">Settings</Text>
         </Flex>
       </NavLink>
-      <NavLink to="/login/setPin">
-        <Flex
-          _hover={{ bg: "#c4c4c460" }}
-          p="1rem"
-          w="100%"
-          alignItems="center"
-        >
-          <Image boxSize="1.5rem" src={setting} alt="menu" />
-          <Text ml="0.5rem">set_pin</Text>
-        </Flex>
-      </NavLink>
-      <NavLink to="/login/logout">
+      <NavLink to="logout">
         <Flex
           _hover={{ bg: "#c4c4c460" }}
           p="1rem"

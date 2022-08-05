@@ -1,45 +1,18 @@
-import React from "react";
-import PageLayout from "./../../container/pageLayout/pageLayout";
+import React, { useContext } from "react";
 import YourAccount from "./../../components/dashboard/yourAccount";
-import {
-  Flex,
-  Text,
-  SimpleGrid,
-  Box,
-  Button,
-  Heading,
-  Center,
-  Spacer,
-} from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import Pinn from "./pin";
+import { Flex } from "@chakra-ui/react";
+import AppContext from "../../context/AppContext";
 
 const Dashboard = () => {
   return (
-    <div>
-      <Flex
-        alignItems="center"
-        color="gray.50"
-        bg="#1B1B1B"
-        py="0.5rem"
-        px="1rem"
-        w="100%"
-      >
-        <Heading color="white">
-          <Heading as="span" display="inline" color="#A1FE6B">
-            Kredit
-          </Heading>
-        </Heading>
-      </Flex>
-      <PageLayout>
-        <Flex w="100%" h="100vh">
-          <Flex w="100%" boxSizing="border-box">
-            <Flex w="inherit" m="2rem" direction="column">
-              <YourAccount balance={56262} name={""} />
-            </Flex>
-          </Flex>
+    <Flex w="100%" h="100vh">
+      <Flex w="100%" boxSizing="border-box">
+        <Flex w="inherit" m="2rem" direction="column">
+          <YourAccount balance={56262} name={""} />
         </Flex>
-      </PageLayout>
-    </div>
+      </Flex>
+    </Flex>
   );
 };
 

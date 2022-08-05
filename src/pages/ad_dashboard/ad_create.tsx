@@ -1,37 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Heading,
   Text,
   HStack,
-  Flex,
   VStack,
   Button,
+  Flex,
   Box,
+  Spacer,
 } from "@chakra-ui/react";
 import DefaultInput from "./../../components/defaultInput";
-import { Link, useNavigate } from "react-router-dom";
-
-const Registration = () => {
-  const navigate = useNavigate();
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // send api request with form data in body
-    navigate("/user/dashboard");
-  };
-
+import AdPageLayout from "../../container/ad_pageLayout";
+const Adclog = () => {
   return (
     <>
-      <Flex w="100%" h="100vh">
-        <Link to="/">
+      <Flex
+        alignItems="center"
+        color="gray.50"
+        bg="#1B1B1B"
+        py="0.5rem"
+        px="1rem"
+        w="100%"
+      >
+        <Heading color="white">
           <Heading as="span" display="inline" color="#A1FE6B">
             Kredit
           </Heading>
-        </Link>
-        <form method="post" onSubmit={handleSubmit}>
+        </Heading>
+      </Flex>
+      <AdPageLayout>
+        <form action="" method="">
           <HStack alignItems="flex-start" m="2rem" textAlign="left" gap="4rem">
             <VStack alignItems="left" width="300px">
               <Text fontSize="lg" fontWeight="bold">
-                Register your account
+                Create Account for user
               </Text>
               <div className="form-inline">
                 <Text fontSize="xs">First Name :</Text>
@@ -76,17 +78,12 @@ const Registration = () => {
                   Register
                 </Button>
               </Box>
-              <Link to="/login">
-                <Text color="#A1FE6B" fontSize="xs">
-                  Click here to go to Login page
-                </Text>
-              </Link>
             </VStack>
           </HStack>
         </form>{" "}
-      </Flex>
+      </AdPageLayout>
     </>
   );
 };
 
-export default Registration;
+export default Adclog;
