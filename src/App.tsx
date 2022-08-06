@@ -17,37 +17,32 @@ import Adlog from "./pages/ad_dashboard/ad_login";
 import Adashboard from "./pages/ad_dashboard/ad_dashboard";
 import Adclog from "./pages/ad_dashboard/ad_create";
 import Adlogg from "./pages/ad_dashboard/ad_logout";
-import AppContext from "./context/AppContext";
 import PageLayout from "./container/pageLayout/pageLayout";
 
 const app = () => {
-  const [pin, setPin] = useState("");
-
   return (
-    <AppContext.Provider value={{ pin, setPin }}>
-      <Flex direction="column" color="white" bg="#0F1010" w="100%">
-        <Routes>
-          <Route path="/" element={<Home />} />{" "}
-          <Route path="/ad_login/" element={<Adlog />} />
-          <Route path="/post" element={<Adashboard />} />
-          <Route path="/ad_login/ad_dashboard" element={<Adashboard />} />
-          <Route path="/ad_login/ad_create" element={<Adclog />} />
-          <Route path="/ad_login/ad_logout" element={<Adlogg />} />
-          <Route path="/post" element={<Dashboard />} />
-          <Route path="/register" element={<Registration />} />
-          <Route path="/login" element={<Log />} />
-          <Route path="/user" element={<PageLayout />}>
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="send-money" element={<SendMoney />} />
-            <Route path="favourities" element={<Fav />} />
-            <Route path="transaction" element={<Transaction />} />
-            <Route path="settings" element={<Settings />} />
-            <Route path="setPin" element={<Pinn />} />
-            <Route path="logout" element={<Logg />} />
-          </Route>
-        </Routes>
-      </Flex>
-    </AppContext.Provider>
+    <Flex direction="column" color="white" bg="#0F1010" w="100%">
+      <Routes>
+        <Route path="/" element={<Home />} />{" "}
+        <Route path="/ad_login/" element={<Adlog />} />
+        <Route path="/post" element={<Adashboard />} />
+        <Route path="/ad_login/ad_dashboard" element={<Adashboard />} />
+        <Route path="/ad_login/ad_create" element={<Adclog />} />
+        <Route path="/ad_login/ad_logout" element={<Adlogg />} />
+        <Route path="/post" element={<Dashboard />} />
+        <Route path="/register" element={<Registration />} />
+        <Route path="/login" element={<Log />} />
+        <Route path="/user" element={<PageLayout />}>
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="send-money" element={<SendMoney />} />
+          <Route path="favourities" element={<Fav />} />
+          <Route path="transaction" element={<Transaction />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="setPin" element={<Pinn />} />
+          <Route path="logout" element={<Logg />} />
+        </Route>
+      </Routes>
+    </Flex>
   );
 };
 

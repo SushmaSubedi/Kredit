@@ -8,6 +8,7 @@ import {
   Flex,
   Box,
   Spacer,
+  Image,
 } from "@chakra-ui/react";
 import DefaultInput from "./../../components/defaultInput";
 import { Link, useNavigate } from "react-router-dom";
@@ -53,6 +54,7 @@ const Log = () => {
           </HStack>
         </form>{" "}
       </Flex>
+      <Spacer />
     </>
   );
 };

@@ -5,14 +5,7 @@ import DefaultButton from "./../../components/defaultButton";
 import DefaultInput from "./../../components/defaultInput";
 import { VStack, HStack, Flex, Text, Heading, Box } from "@chakra-ui/react";
 
-import AppContext from "../../context/AppContext";
 const Pinn = () => {
-  const [pinValue, setPinValue] = useState("");
-  console.log(pinValue);
-  const { setPin } = useContext(AppContext);
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPinValue(e.target.value);
-  };
   return (
     <div>
       <Flex w="100%" h="100vh">
@@ -25,16 +18,11 @@ const Pinn = () => {
               Enter the pin you wish for.
             </Text>
             <Text fontSize="xs">Set pin:</Text>
-            <DefaultInput
-              placeholder=""
-              onChange={handleChange}
-              value={pinValue}
-            />
-
+            <DefaultInput placeholder="" />
+            <Text fontSize="xs">Password:</Text>
+            <DefaultInput placeholder="" />
             <Box textAlign="center" pt="1rem">
-              <DefaultButton onClick={() => setPin && setPin(pinValue)}>
-                Set
-              </DefaultButton>
+              <DefaultButton>Set</DefaultButton>
             </Box>
           </VStack>
         </HStack>
