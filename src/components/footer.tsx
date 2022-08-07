@@ -1,4 +1,5 @@
 import { PhoneIcon, EmailIcon, TriangleDownIcon } from "@chakra-ui/icons";
+import React from "react";
 
 import {
   Flex,

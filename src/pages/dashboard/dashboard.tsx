@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import YourAccount from "./../../components/dashboard/yourAccount";
-import Pinn from "./pin";
+// import Pinn from "./pin";
 import { Flex } from "@chakra-ui/react";
-import AppContext from "../../context/AppContext";
+// import AppContext from "../../context/AppContext";
 
 const Dashboard = () => {
   return (
